@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Blinking with advanced jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script>
+            $(function () {
+                window.setInterval(function() {
+                    $('#greeting').toggle();
+                }, 1000);
+            });
+        </script>
+
+        <style>
+            #greeting {
+                text-align: center;
+                color: darkred;
+                font-size: 96pt;
+                margin: 250px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="greeting">
+            Hello, world!
+        </div>
+    </body>
+</html>

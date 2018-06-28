@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Blinking</title>
+        <script>
+
+            function blink() {
+                var elem = document.getElementById('greeting');
+
+                if(elem.style.visibility === "hidden") {
+                    elem.style.visibility = "visible";
+                } else {
+                    elem.style.visibility = "hidden"
+                }
+            }
+
+            window.setInterval(blink, 1000);
+        </script>
+
+        <style>
+            #greeting {
+                font-size: 96pt;
+                margin: 250px;
+                text-align:: center;
+                color: darkred;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div id="greeting">
+            Hello, world!
+        </div>
+    </body>
+
+</html>
